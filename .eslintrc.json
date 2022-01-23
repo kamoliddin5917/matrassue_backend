@@ -1,0 +1,82 @@
+{
+	"root": true,
+	"env": {
+		"commonjs": true,
+		"es2021": true,
+		"node": true
+	},
+	"extends": "eslint:recommended",
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"ecmaFeatures": {
+			"impliedStrict": true
+		}
+	},
+	"rules": {
+		"no-await-in-loop": "error",
+		"no-cond-assign": [
+			"error",
+			"except-parens"
+		],
+		"no-console": [
+			"warn",
+			{
+				"allow": [
+					"info",
+					"warn",
+					"error"
+				]
+			}
+		],
+		"no-implicit-coercion": "warn",
+		"no-promise-executor-return": "error",
+		"no-self-compare": "error",
+		"no-unmodified-loop-condition": "warn",
+		"no-use-before-define": [
+			"error",
+			{
+				"functions": true,
+				"classes": true,
+				"variables": true
+			}
+		],
+		"valid-typeof": [
+			"error",
+			{
+				"requireStringLiterals": true
+			}
+		],
+		"curly": [
+			"error",
+			"all"
+		],
+		"eqeqeq": [
+			"warn",
+			"always"
+		],
+		"indent": [
+			"warn",
+			"tab"
+		],
+		"linebreak-style": [
+			"error",
+			"unix"
+		],
+		"eol-last": [
+			"error",
+			"always"
+		],
+		"quotes": [
+			"warn",
+			"double",
+			{
+				"avoidEscape": true,
+				"allowTemplateLiterals": false
+			}
+		],
+		"semi": [
+			"error",
+			"always"
+		]
+	}
+}
